@@ -1,0 +1,57 @@
+// VS Code Open-Source Market Place: https://open-vsx.org/
+// The following extensions are not available at https://open-vsx.org/:
+// "cg-cnu.vscode-codetags"
+// "marchiore.csvtomarkdown"
+// "Perkovec.emoji"
+// "bierner.markdown-preview-github-styles"
+// "alexzshl.badges-snippets"
+//  "ms-vscode-remote.remote-ssh"
+// "mohsen1.prettify-json"
+// bierner.github-markdown-preview
+// "bierner.markdown-checkbox"
+// Requires access to Internet. Do not work on NYL AWS:
+// "danielsanmedium.dscodegpt"
+{
+    "recommendations": [
+        "amazonwebservices.aws-toolkit-vscode",
+        "ms-vscode.sublime-keybindings",
+        "Gruntfuggly.todo-tree",
+        "njpwerner.autodocstring",
+        "JannisX11.batch-rename-extension",
+        "bungcip.better-toml",
+        "formulahendry.code-runner",
+        "streetsidesoftware.code-spell-checker",
+        "iterative.dvc",
+        "GrapeCity.gc-excelviewer",
+        "codezombiech.gitignore",
+        "seatonjiang.gitmoji-vscode",
+        "oderwat.indent-rainbow",
+        "yzhang.markdown-all-in-one",
+        "pkief.markdown-checkbox",
+        "bierner.markdown-emoji",
+        "bierner.markdown-image-size",
+        "bierner.markdown-mermaid",
+        "darkriszty.markdown-table-prettify",
+        "DavidAnson.vscode-markdownlint",
+        "ms-python.python",
+        "donjayamanne.python-environment-manager",
+        "mechatroner.rainbow-csv",
+        "redhat.vscode-yaml",
+        "dracula-theme.theme-dracula",
+        "github.vscode-pull-request-github",
+        "ibm.output-colorizer",
+        "KevinRose.vsc-python-indent",
+        "stkb.rewrap",
+        "wayou.vscode-todo-highlight",
+        "vscode-icons-team.vscode-icons",
+        "tomoki1207.pdf",
+        "mhutchie.git-graph",
+        "charliermarsh.ruff",
+        "ms-python.black-formatter",
+        "github.vscode-github-actions",
+        "adam-bender.commit-message-editor",
+        "johnpapa.vscode-peacoc",
+        "eamodio.gitlens",
+        "medo64.render-crlf"
+    ]
+}

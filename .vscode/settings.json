@@ -1,0 +1,445 @@
+{
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.defaultInterpreterPath": "",
+    "ruff.args": [
+        "--config=pyproject.toml",
+        "--preview"
+    ],
+    "ruff.path": [
+        "/Users/marcos_aguilerakeyser/Library/Caches/pypoetry/virtualenvs/insuranceqaadapterdata-a-sHG8O7-py3.10/bin/ruff"
+    ],
+    "ruff.interpreter": [
+        "/Users/marcos_aguilerakeyser/Library/Caches/pypoetry/virtualenvs/insuranceqaadapterdata-a-sHG8O7-py3.10/bin/python"
+    ],
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": [],
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.profiles.linux": {
+        "Bash": {
+            "path": "/bin/bash",
+            "args": [],
+            "icon": "terminal-bash"
+        },
+        "Zsh": {
+            "path": "/bin/zsh",
+            "args": [],
+            "icon": "terminal-zsh"
+        }
+    },
+    "terminal.integrated.profiles.osx": {
+        "Bash": {
+            "path": "/bin/bash",
+            "args": [],
+            "icon": "terminal-bash"
+        },
+        "Zsh": {
+            "path": "/bin/zsh",
+            "args": [],
+            "icon": "terminal-zsh"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.linux": "Bash",
+    "terminal.integrated.defaultProfile.osx": "Zsh",
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.productIconTheme": "Default",
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.includeExtendedSummary": true,
+    "autoDocstring.includeName": false,
+    "editor.fontSize": 15,
+    "terminal.integrated.fontSize": 14,
+    "rewrap.wholeComment": false,
+    "rewrap.autoWrap.enabled": true,
+    "rewrap.reformat": true,
+    "rewrap.doubleSentenceSpacing": true,
+    "rewrap.wrappingColumn": 72,
+    "editor.rulers": [
+        72,
+        79
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": false
+    },
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "[jupyter]": {
+        "editor.formatOnSave": false,
+    },
+    "black-formatter.importStrategy": "fromEnvironment",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": false,
+    "todohighlight.keywords": [
+        {
+            "text": "BUG:",
+            "color": "black",
+            "backgroundColor": "#e34a33",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "NOBUG:",
+            "color": "black",
+            "backgroundColor": "#756bb1",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "RFE:",
+            "color": "black",
+            "backgroundColor": "#dfc27d",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "IDEA:",
+            "color": "#d6604d",
+            "backgroundColor": "#ffffcc",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "???:",
+            "color": "#5aae61",
+            "backgroundColor": "#762a83",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "!!!:",
+            "color": "#de77ae",
+            "backgroundColor": "yellow",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "PORT:",
+            "color": "#b8e186",
+            "backgroundColor": "#de77ae",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "CAVEAT:",
+            "color": "#d6604d",
+            "backgroundColor": "#5aae61",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "FAQ:",
+            "color": "#5aae61",
+            "backgroundColor": "#d6604d",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "GLOSS:",
+            "color": "#5aae61",
+            "backgroundColor": "#d6604d",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "SEE:",
+            "color": "#5aae61",
+            "backgroundColor": "#de77ae",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "TODOC:",
+            "color": "#a6bddb",
+            "backgroundColor": "#000",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "CRED:",
+            "color": "#000",
+            "backgroundColor": "#a6bddb",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "STAT:",
+            "color": "#de77ae",
+            "backgroundColor": "#d6604d",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "RVD:",
+            "color": "#de77ae",
+            "backgroundColor": "#d6604d",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "NOTE:",
+            "color": "#b2182b",
+            "backgroundColor": "#d1e5f0",
+            "overviewRulerColor": "grey",
+            "borderRadius": "2px"
+        },
+        {
+            "text": "HACK:",
+            "color": "#000",
+            "isWholeLine": false,
+            "borderRadius": "2px"
+        },
+        {
+            "text": "TODO:",
+            "color": "#000",
+            "borderRadius": "2px"
+        }
+    ],
+    "codetags.custom": [
+        {
+            "name": "see",
+            "body": "Pointers to other code, web link, etc."
+        },
+        {
+            "name": "nobug",
+            "body": "Problems that are well-known but will never be addressed due to design problems or domain limitations."
+        },
+        {
+            "name": "req",
+            "body": "Satisfactions of specific, formal requirements"
+        },
+        {
+            "name": "rfe",
+            "body": "Requests For Enhancement: Roadmap items not yet implemented."
+        },
+        {
+            "name": "!!!",
+            "body": "Alerts: In need of immediate attention."
+        },
+        {
+            "name": "port",
+            "body": "Portability: Workarounds specific to OS, language version, etc."
+        },
+        {
+            "name": "caveat",
+            "body": "Caveats: Implementation details/gotchas that stand out as non-intuitive."
+        },
+        {
+            "name": "faq",
+            "body": "Frequently Asked Questions: Interesting areas that require external explanation."
+        },
+        {
+            "name": "gloss",
+            "body": "Frequently Asked Questions: Interesting areas that require external explanation."
+        },
+        {
+            "name": "todoc",
+            "body": "Needs Documentation: Areas of code that still need to be documented."
+        },
+        {
+            "name": "cred",
+            "body": "Credits: Accreditations for external provision of enlightenment."
+        },
+        {
+            "name": "stat",
+            "body": "Status: File-level statistical indicator of maturity of this file."
+        },
+        {
+            "name": "rvd",
+            "body": "Reviewed: File-level indicator that review was conducted."
+        }
+    ],
+    "todohighlight.include": [
+        "**/*.js",
+        "**/*.jsx",
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.html",
+        "**/*.php",
+        "**/*.css",
+        "**/*.scss",
+        "**/*.py"
+    ],
+    "todohighlight.exclude": [
+        "**/node_modules/**",
+        "**/bower_components/**",
+        "**/dist/**",
+        "**/build/**",
+        "**/.vscode/**",
+        "**/.github/**",
+        "**/_output/**",
+        "**/*.min.*",
+        "**/*.map",
+        "**/.next/**"
+    ],
+    "todohighlight.defaultStyle": {},
+    "files.associations": {
+        ".gitignore": "bat"
+    },
+    "github-enterprise.uri": "https://git.nylcloud.com/",
+    "terminal.integrated.tabs.defaultColor": null,
+    "cSpell.language": "en",
+    "cSpell.maxNumberOfProblems": 100,
+    "cSpell.numSuggestions": 8,
+    "cSpell.minWordLength": 4,
+    "cSpell.enabledLanguageIds": [
+        "csharp",
+        "go",
+        "javascript",
+        "javascriptreact",
+        "markdown",
+        "php",
+        "plaintext",
+        "typescript",
+        "typescriptreact",
+        "yml",
+        "python",
+        "R"
+    ],
+    "cSpell.enabled": true,
+    "cSpell.showStatus": true,
+    "cSpell.words": [
+        "autoflake"
+    ],
+    "cSpell.allowCompoundWords": false,
+    "cSpell.ignoreWords": [
+        "behaviour"
+    ],
+    "cSpell.userWords": [
+        "arange",
+        "iloc",
+        "interquartile",
+        "lineplot",
+        "subseting",
+        "yhat",
+        "astype",
+        "bytree",
+        "cnty",
+        "colsample",
+        "colwidth",
+        "dataframe",
+        "dateutil",
+        "dtype",
+        "finfo",
+        "fips",
+        "grps",
+        "isin",
+        "isort",
+        "joblib",
+        "mamimo",
+        "MAPE",
+        "matplotlib",
+        "nonbrand",
+        "nthread",
+        "pyplot",
+        "rcvm",
+        "rcvq",
+        "relativedelta",
+        "RMSE",
+        "savefig",
+        "scikit",
+        "scipy",
+        "shap",
+        "SHAP",
+        "Shapley",
+        "sklearn",
+        "softmax",
+        "statsmodels",
+        "tweedie",
+        "xgboost"
+    ],
+    "cSpell.ignorePaths": [
+        "node_modules",
+        "**/node_modules",
+        "**/node_modules/**",
+        "node_modules/**",
+        "vscode-extension",
+        ".git",
+        "*.dll",
+        "**/*.dll"
+    ],
+    "cSpell.flagWords": [
+        "hte"
+    ],
+    "cSpell.spellCheckDelayMs": 50,
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+    "markdownlint.config": {
+        "MD046": false,
+        "MD033": false
+    },
+    "redhat.telemetry.enabled": false,
+    "notebook.markup.fontSize": 16,
+    "notebook.output.wordWrap": true,
+    "notebook.formatOnCellExecution": false,
+    "notebook.formatOnSave.enabled": false,
+    "workbench.editorAssociations": {
+        "*.m4a": "wavPreview.audioPreview",
+        "*.md": "default"
+    },
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "\"$pythonPath\" $fullFileName"
+    },
+    "peacock.remoteColor": "#215732",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#ff6433",
+        "activityBar.background": "#ff6433",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#00ff3d",
+        "activityBarBadge.foreground": "#15202b",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#ff6433",
+        "statusBar.background": "#ff3d00",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#ff6433",
+        "statusBarItem.remoteBackground": "#ff3d00",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#ff3d00",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#ff3d0099",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#ff3d00",
+    "CodeGPT.apiKey": "OpenAI",
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.crswap": true
+    },
+    "mypy-type-checker.args": [
+        "--config-file=pyproject.toml"
+    ],
+    "mypy-type-checker.cwd": "${workspaceFolder}",
+    "mypy-type-checker.importStrategy": "fromEnvironment",
+    "mypy-type-checker.preferDaemon": true,
+    "mypy-type-checker.reportingScope": "workspace",
+    "editor.renderControlCharacters": true,
+    "editor.renderFinalNewline": "on",
+    "editor.renderWhitespace": "all",
+    "editor.renderControlCharacters": true,
+    "code-eol.newlineCharacter": "↓",
+    "code-eol.returnCharacter": "←",
+    "code-eol.crlfCharacter": "↵",
+    "code-eol.highlightNonDefault": true,
+    "code-eol.highlightExtraWhitespace": true,
+    "code-eol.decorateBeforeEol": true,
+    "code-eol.forceShowOnWordWrap": true,
+    "editor.renderControlCharacters": true,
+    "editor.wordWrap": "on"
+}

@@ -1,0 +1,201 @@
+[tool.poetry]
+name = "insuranceqaadapterdata"
+version = "0.1.0"
+description = "InsuranceQAAdapterData is a structured and pre-processed version of the original InsuranceQA dataset, optimized for fine-tuning adapters, large language models (LLMs), and embedding models in insurance-related question-answering tasks."
+authors = ["Marcos Keyser <marcosak@gmail.com>"]
+license = "Internal Use Only"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10.13,<3.12"
+transformers = "^4.49.0"
+matplotlib = "^3.10.0"
+
+[tool.poetry.dev-dependencies]
+black = { version = "23.7.0", extras = ["jupyter"] }
+ipykernel = "6.24.0"
+pre-commit = "3.3.3"
+pymarkdownlnt = "0.9.13.4"
+rope = "1.9.0"
+ruff = "0.4.9"
+dvc = "3.40.1"
+toml = "^0.10.2"
+nbconvert = "^7.8.0"
+mypy = "1.10.0"
+types-toml = "^0.10.1"
+pydantic = "2.8.2"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "1.6.1"
+mkdocs-git-revision-date-localized-plugin = "1.2.2"
+mkdocs-material = "9.5.36"
+mkdocs-mermaid2-plugin = "1.1.1"
+mkdocstrings-python = "1.11.1"
+
+[tool.poetry.group.tests.dependencies]
+pytest = "8.2.2"
+pytest-benchmark = "4.0.0"
+pytest-xdist = "3.6.1"
+pytest-cov = "5.0.0"
+pytest-mock = "^3.14.0"
+pytest-sugar = "1.0.0"
+pytest-timeout = "2.3.1"
+
+[tool.poetry.group.coverage.dependencies]
+coverage = { extras = ["toml"], version = ">=7.2.7" }
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 79
+target-version = ['py310']
+include = '''
+(
+    \.pyi?$
+  | \.ipynb$
+)
+'''
+
+[tool.ruff]
+select = [
+    # Pyflakes (F) rules
+    "F401", # Unused imports
+    "F402", # Import shadowed by loop var
+    "F403", # `from module import *` used
+    "F405", # Name may be undefined, or defined from star imports
+    "F601", # Dictionary key literal repeated
+    "F602", # Dictionary key variable repeated
+    "F621", # Too many expressions in star-unpacking assignment
+    "F631", # Assert test is a non-empty tuple
+    "F632", # Use `==` to compare constant literals
+    "F701", # `break` outside loop
+    "F702", # `continue` not properly in loop
+    "F704", # Yield statement outside of a function
+    "F706", # `return` statement outside of a function/method
+    "F707", # `except` block not the last exception handler
+    "F722", # Syntax error in forward annotation
+    "F811", # Redefinition of unused variable from line
+    "F821", # Undefined name
+    "F841", # Local variable is assigned to but never used
+
+    # pycodestyle (E, W) rules
+    "E101", # Indentation contains mixed spaces and tabs
+    "E111", # Indentation is not a multiple of four
+    "E112", # Expected an indented block
+    "E113", # Unexpected indentation
+    "E114", # Indentation is not a multiple of four (comment)
+    "E115", # Expected an indented block (comment)
+    "E116", # Unexpected indentation (comment)
+    "E117", # Over-indented (comment)
+    "E201", # Whitespace after '(' or '['
+    "E202", # Whitespace before ')' or ']'
+    "E203", # Whitespace before ':'
+    "E211", # Whitespace before '(' or '['
+    "E225", # Missing whitespace around operator
+    "E231", # Missing whitespace after ',', ';', or ':'
+    "E251", # Unexpected spaces around keyword / parameter equals
+    "E261", # At least two spaces before inline comment
+    "E262", # Inline comment should start with '# '
+    "E265", # Block comment should start with '# '
+    "E266", # Too many leading '#' for block comment
+    "E271", # Multiple spaces after keyword
+    "E272", # Multiple spaces before keyword
+    "E273", # Tab after keyword
+    "E274", # Tab before keyword
+    "E275", # Missing whitespace after keyword
+    "E401", # Multiple imports on one line
+    "E402", # Module level import not at top of file
+    "E501", # Line too long
+    "E711", # Comparison to None should be 'expr is None'
+    "E712", # Comparison to True should be 'if cond is True:' or 'if cond:'
+    "E713", # Test for membership should be 'not in'
+    "E714", # Test for object identity should be 'is not'
+    "E721", # Do not compare types, use 'isinstance()'
+    "E722", # Do not use bare 'except'
+    "E731", # Do not assign a lambda expression, use a def
+
+    # isort (I) rules
+    "I001", # Import block is un-sorted or un-formatted
+    "I002", # Missing required import
+
+    # pep8-naming (N) rules
+    "N801", # Class name should use CapWords convention
+    "N802", # Function name should be lowercase
+    "N803", # Argument name should be lowercase
+    "N804", # First argument of a class method should be named 'cls'
+    "N805", # First argument of a method should be named 'self'
+    "N806", # Variable in function should be lowercase
+
+    # pydocstyle (D) rules
+    "D100", # Missing docstring in public module
+    "D101", # Missing docstring in public class
+    "D102", # Missing docstring in public method
+    "D103", # Missing docstring in public function
+    "D104", # Missing docstring in public package
+    "D105", # Missing docstring in magic method
+    "D106", # Missing docstring in public nested class
+    "D107", # Missing docstring in __init__
+]
+# Decrease the maximum line length to 79 characters.
+line-length = 79
+include = ["*.py", "*.pyi", "**/pyproject.toml", "*.ipynb"]
+
+[tool.pymarkdown]
+disable-rules = ["MD046"]
+
+[tool.coverage.run]
+# Specify the source directory where your code resides
+source = [
+    "src/insuranceqaadapterdata",
+]
+# Specify patterns to omit from coverage
+omit = [
+    "*/tests/*",
+    "*/src/insuranceqaadapterdata/utils.py",
+    "*/src/insuranceqaadapterdata/models/*",
+    "*/src/insuranceqaadapterdata/data/*",
+    "*/src/insuranceqaadapterdata/expander_demo.py",
+    "*/src/insuranceqaadapterdata/expander_example.py",
+    "*/src/insuranceqaadapterdata/__init__.py"
+]
+
+[tool.coverage.report]
+# Specify lines to exclude from coverage report
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    'if __name__ == "__main__":',
+]
+
+omit = [
+    "src/insuranceqaadapterdata/acronym_expansion_demo.py",
+    "src/insuranceqaadapterdata/acronym_expansion_usage.py",
+    "src/insuranceqaadapterdata/spacy_data_prep.py",
+    "src/insuranceqaadapterdata/pre_auto_annotation.py",
+    "src/insuranceqaadapterdata/acronym_validator.py"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-v --cov=src/insuranceqaadapterdata --cov-report=term-missing --cov-report=html --timeout=5"
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+log_cli = true
+log_cli_level = "INFO"
+log_format = "%(asctime)s %(levelname)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+
+[tool.mypy]
+python_version = "3.10"
+disallow_untyped_defs = true
+disallow_untyped_calls = true
+ignore_missing_imports = true
