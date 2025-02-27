@@ -7,8 +7,9 @@ This repository provides a **domain-specific insurance dataset** designed to ada
 This dataset **bridges that gap** by offering a structured, **balanced**, and **insurance-focused** question-answer dataset. It is particularly useful for **Retrieval-Augmented Generation (RAG)** systems and other advanced **NLP** solutions in real-world **insurance applications**.
 
 > 📖 **Documentation:**  
-> - **[Explanations](docs/explanation.md):** Learn the **rationale** behind dataset preparation and validation.  
-> - **[How-To Guides](docs/how-to-guides.md):** Step-by-step instructions on processing and validating the dataset.  
+> - **[Index](https://markeyser.github.io/insurance-adapter-data/)**.
+> - **[Explanations](https://markeyser.github.io/insurance-adapter-data/explanation.html):** Learn the **rationale** behind dataset preparation and validation.  
+> - **[How-To Guides](https://markeyser.github.io/insurance-adapter-data/how-to-guides.html):** Step-by-step instructions on processing and validating the dataset.  
 
 ---
 
