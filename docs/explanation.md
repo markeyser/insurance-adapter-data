@@ -51,9 +51,11 @@ After the dense retriever fetches top documents, a **cross-encoder reranker** ca
 - **Benefit**: Rerankers adapted to insurance data can significantly boost accuracy in **insurance Q&A** pipelines.
 
 #### **3. Synthetic Data Generation**
-Tools like **Microsoft PromptWizard** can leverage this domain-specific dataset to automatically create additional insurance-related examples, further improving model robustness.  
+Tools like **Microsoft PromptWizard** can leverage this domain-specific
+dataset to automatically create additional insurance-related examples,
+further improving model robustness. Additionally, the underlying LLM itself (**DeepSeek‑R1‑Distill‑Qwen‑14B**) can be **fine-tuned** on this dataset to improve the accuracy and quality of its generated labels.  
 - **Why Synthetic Data**: Real domain data is sometimes limited; synthetic augmentation can enlarge your dataset without needing massive manual curation.  
-- **Benefit**: Produces **LLM-based automatic annotations**, enhancing diversity and coverage of domain-specific expressions.
+- **Benefit** Expands dataset coverage without **manual curation**, while also ensuring that the LLM producing the annotations is **optimized for domain-specific reasoning** via fine-tuning.
 
 ---
 
