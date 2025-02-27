@@ -60,8 +60,8 @@ This dataset is ideal for **adapting Generative AI components** in insurance-spe
 
 ### **3️⃣ Synthetic Data Generation**
 - **Problem** → Limited real-world data for niche insurance topics.  
-- **Solution** → Tools like **Microsoft PromptWizard** can use this dataset for **LLM-based automatic annotation**.  
-- **Benefit** → Expands dataset coverage without **manual curation**.  
+- **Solution** → Tools like **Microsoft PromptWizard** can use this dataset for **LLM-based automatic annotation**. Additionally, the underlying LLM itself (**DeepSeek‑R1‑Distill‑Qwen‑14B**) can be **fine-tuned** on this dataset to improve the accuracy and quality of its generated labels.  
+- **Benefit** → Expands dataset coverage without **manual curation**, while also ensuring that the LLM producing the annotations is **optimized for domain-specific reasoning** via fine-tuning.  
 
 ---
 

@@ -1,5 +1,9 @@
 ## Ignore Data Files ##
 
+## History ##
+
+.history
+
 ## macOS ##
 
 .DS_Store
