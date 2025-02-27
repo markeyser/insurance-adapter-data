@@ -55,13 +55,13 @@ This dataset is ideal for **adapting Generative AI components** in insurance-spe
 - **Application** → Enhances **RAG Q&A systems** for insurance.
 
 ### **2️⃣ Fine-Tuning Cross-Encoding Reranker Models**
-- **Problem** → Standard **cross-encoders** may misrank insurance-specific results.  
-- **Solution** → Fine-tuning a **reranker** improves ranking accuracy in **insurance Q&A pipelines**.  
+- **Problem** → Standard **cross-encoders** may misrank insurance-specific results.
+- **Solution** → Fine-tuning a **reranker** improves ranking accuracy in **insurance Q&A pipelines**.
 
 ### **3️⃣ Synthetic Data Generation**
-- **Problem** → Limited real-world data for niche insurance topics.  
-- **Solution** → Tools like **Microsoft PromptWizard** can use this dataset for **LLM-based automatic annotation**. Additionally, the underlying LLM itself (**DeepSeek‑R1‑Distill‑Qwen‑14B**) can be **fine-tuned** on this dataset to improve the accuracy and quality of its generated labels.  
-- **Benefit** → Expands dataset coverage without **manual curation**, while also ensuring that the LLM producing the annotations is **optimized for domain-specific reasoning** via fine-tuning.  
+- **Problem** → Limited real-world data for niche insurance topics.
+- **Solution** → Tools like **Microsoft PromptWizard** can use this dataset for **LLM-based automatic annotation**. Additionally, the underlying LLM itself (**DeepSeek‑R1‑Distill‑Qwen‑14B**) can be **fine-tuned** on this dataset to improve the accuracy and quality of its generated labels.
+- **Benefit** → Expands dataset coverage without **manual curation**, while also ensuring that the LLM producing the annotations is **optimized for domain-specific reasoning** via fine-tuning.
 
 ---
 
@@ -75,6 +75,7 @@ Ensure you have:
 - **Docker** (optional, for containerization)
 
 ### 📥 **Clone the Repository**
+
 ```bash
 git clone https://github.com/your-org/insuranceqa-adapter-data.git
 cd insuranceqa-adapter-data
@@ -94,7 +95,7 @@ poetry shell
 
 1️⃣ Data Preparation
 
-```python
+```bash
 python src/insuranceqaadapterdata/data_preparation_stratified.py
 ```
 
@@ -103,7 +104,7 @@ python src/insuranceqaadapterdata/data_preparation_stratified.py
 
 2️⃣ Data Validation & Analysis
 
-```python
+```bash
 python src/insuranceqaadapterdata/data_validation.py
 ```
 
@@ -156,11 +157,11 @@ poetry run mypy src
 
 We welcome contributions! To contribute:
 
-1.	Fork the repository.
-2.	Create a feature branch: git checkout -b feature-branch-name
-3.	Commit your changes: git commit -m "Add new feature"
-4.	Push to your fork: git push origin feature-branch-name
-5.	Open a pull request.
+1. Fork the repository.
+2. Create a feature branch: `git checkout -b feature-branch-name`
+3. Commit your changes: `git commit -m "Add new feature"`
+4. Push to your fork: `git push origin feature-branch-name`
+5. Open a pull request.
 
 For guidelines, check [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
