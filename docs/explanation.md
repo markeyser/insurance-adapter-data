@@ -59,7 +59,7 @@ further improving model robustness. Additionally, the underlying LLM itself (**D
 
 ---
 
-## Technical Report 2: Data Preparation Process for the InsuranceQA Dataset
+## Data Preparation Process for the InsuranceQA Dataset
 
 ### 1. Overview of the InsuranceQA Resources
 
@@ -166,7 +166,7 @@ This data preparation process leverages the pre-processed InsuranceQA data from 
 
 ---
 
-## Technical Report 3: Detailed Data Validation Process and Analysis
+## Detailed Data Validation Process and Analysis
 
 ### 1. Overview
 
